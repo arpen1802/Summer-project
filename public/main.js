@@ -18,7 +18,7 @@ function hasnumbers(string) {
 }
 
   function length(string){
-    if(string.length > 8 && string.length < 16){
+    if(string.length > 7 && string.length < 17){
       return true;
     }
     else{
