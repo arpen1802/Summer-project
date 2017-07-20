@@ -40,4 +40,3 @@ $("#donebutton").on("click", function() {
 
 
 
-//&& uppercase($("#password").val()) && hasnumbers($("#password").val()) && length($("#password").val())
