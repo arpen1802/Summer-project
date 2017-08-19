@@ -1,4 +1,4 @@
-var result_display = document.getElementById('wrongpassword');
+var result_display = document.getElementById('check');
 
 function displayResult(result){
   result_display.innerHTML = '<h1>' + result + '</h1>';
