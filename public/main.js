@@ -1,3 +1,9 @@
+var result_display = document.getElementById('wrongpassword');
+
+function displayResult(result){
+  result_display.innerHTML = '<h1>' + result + '</h1>';
+}
+
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email);
@@ -30,10 +36,10 @@ function hasnumbers(string) {
 $("#donebutton").on("click", function() {
   if ($("#login").val() != "" && $("#password").val() != ""){
         if(validateEmail($("#login").val()) && uppercase($("#password").val()) && hasnumbers($("#password").val()) && length($("#password").val())){
-          console.log("Great!")
+          displayResult("Great!");
         }
         else{
-         console.log('Something went wrong!!! Try again.');
+         displayResult("Wrong password!!!");
         }
       }
     })
